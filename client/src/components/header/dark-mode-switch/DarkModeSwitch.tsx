@@ -14,11 +14,12 @@ export default function DarkModeSwitch() {
 
   return (
     <DarkModeWrapper>
-      Dark Mode:
+      Dark Mode:&nbsp;
       <Switch
         height={24}
         width={48}
         uncheckedIcon={false}
+        checkedIcon={false}
         onChange={(checked: boolean) => setDarkMode(checked)}
         checked={darkMode}
       />

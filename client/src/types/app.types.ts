@@ -6,10 +6,12 @@ export interface IDarkModeContext {
 export type ThemeType = {
   primaryBackground: string,
   headerBackground: string,
+  footerBackground: string,
   buttonBackground: string,
   cardBackground: string,
   primaryBorder: string,
   primaryText: string,
   buttonText: string,
   linkText: string,
+  articleShadow: string
 }

@@ -24,10 +24,10 @@ test('must contain img with proper alt text and path', () => {
   expect(image[0]).toBeInTheDocument()
 })
 
-test('must contain h4 with article name', () => {
+test('must contain h5 with article name', () => {
   const { getByText } = render(<ArticleCard article={mockArticle} />)
   const name = getByText(mockArticle.name)
-  expect(name.tagName).toBe('H4')
+  expect(name.tagName).toBe('H5')
   expect(name).toBeInTheDocument()
 })
 

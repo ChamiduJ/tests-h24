@@ -11,7 +11,20 @@ interface IProps {
 const Articles = Styled.div`
 display: grid;
 grid-gap: 26px;
-grid-template-columns: repeat(auto-fill, minmax(200px, 1fr) ) ;
+grid-template-columns: repeat(auto-fill, minmax(200px, 1fr) );
+padding-right: 10px;
+
+@media screen and (max-width: 1200px) {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr) );
+}
+
+@media screen and (max-width: 992px) {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr) );
+}
+
+@media screen and (max-width: 768px) {
+  grid-template-columns: repeat(auto-fill, minmax(100%, 1fr) );
+}
 `
 
 export default function ProductList({ categories }: IProps) {

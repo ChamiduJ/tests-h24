@@ -13,6 +13,14 @@ display: grid;
 grid-gap: 0 20px;
 grid-template-columns: 160px auto;
 grid-template-areas: 'sidebar content';
+
+@media screen and (max-width: 992px) {
+  grid-template-columns: 180px auto;
+}
+
+@media screen and (max-width: 768px) {
+  grid-template-columns: 220px auto;
+}
 `
 
 const Content = Styled.div  `

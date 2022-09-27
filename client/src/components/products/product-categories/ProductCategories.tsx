@@ -9,11 +9,10 @@ interface IProps {
 
 const Sidebar = Styled.div`
 grid-area: sidebar;
-background-color: lavender;
 `
 
 const Heading = Styled.h3`
-margin: 0 0 10px;
+margin: 10px;
 `
 
 const List = Styled.ul`
@@ -23,8 +22,8 @@ padding: 0;
 `
 
 const Item = Styled.li`
-margin: 0 0 0 8px;
-padding: 8px 0;
+margin: 0 0 0 10px;
+padding: 5px 0;
 `
 
 export default function ProductsCategories({ categories }: IProps) {

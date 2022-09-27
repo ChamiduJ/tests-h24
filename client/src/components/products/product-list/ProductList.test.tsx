@@ -48,8 +48,8 @@ test('must contain list of Articles', async () => {
   const item1 = getByText('Mock Article Name 1')
   const item2 = getByText('Mock Article Name 2')
 
-  expect(item1.tagName).toBe('H4')
-  expect(item2.tagName).toBe('H4')
+  expect(item1.tagName).toBe('H5')
+  expect(item2.tagName).toBe('H5')
 
   expect(item1).toBeInTheDocument()
   expect(item2).toBeInTheDocument()

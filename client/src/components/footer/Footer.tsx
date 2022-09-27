@@ -2,7 +2,8 @@ import React from 'react'
 import Styled from 'styled-components'
 
 const StyledFooter = Styled.footer`
-background-color: lightblue;
+background: ${({ theme }) => theme.footerBackground};
+margin-top: 20px;
 padding: 20px 10px;
 text-align: center;
 `

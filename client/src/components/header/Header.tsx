@@ -6,7 +6,7 @@ import Logo from './logo/Logo'
 import SearchBox from './search-box/SearchBox'
 
 const StyledHeader = Styled.header`
-background-color: lightblue;
+background: ${({ theme }) => theme.headerBackground};
 display: flex;
 flex-flow: row;
 justify-content: space-between;
