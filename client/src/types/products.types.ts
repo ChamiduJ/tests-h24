@@ -33,3 +33,14 @@ export type Image = {
 export type CategoryArticle = {
   articles: Article[]
 }
+
+export interface IProductsContext {
+  categories: Category[]
+  setCategories: React.Dispatch<React.SetStateAction<Category[]>>
+}
+
+export interface IProductsResponse {
+  data: {
+    categories: Category[]
+  }
+}
