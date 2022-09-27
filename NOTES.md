@@ -9,3 +9,4 @@ Restructure components
 Add linter
 Add dark mode
 Add unit testing
+Add front end search functionality

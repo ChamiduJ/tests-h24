@@ -21,19 +21,28 @@ grid-column: span 2;
 `
 
 export default function Products() {
-  const { categories, setCategories } = useContext<IProductsContext>(ProductsContext)
+  const { categoriesData, setCategoriesData } = useContext<IProductsContext>(ProductsContext)
 
   useEffect(() => {
-    loadProducts().then((response) => setCategories(() => (response.data.categories[0] ? response.data.categories : [])))
-  }, [setCategories])
+    loadProducts().then(
+      (response) => {
+        const categories = response?.data?.categories[0] ? response.data.categories : []
+
+        setCategoriesData({
+          original: categories,
+          filtered: categories
+        })
+      }
+    )
+  }, [setCategoriesData])
 
   return (
     <Main>
-      <ProductsCategories categories={categories} />
+      <ProductsCategories categories={categoriesData.original} />
 
       <Content>
-        <ProductsHeading categories={categories} />
-        <ProductList categories={categories} />
+        <ProductsHeading categories={categoriesData.original} />
+        <ProductList categories={categoriesData.filtered} />
       </Content>
     </Main>
   )

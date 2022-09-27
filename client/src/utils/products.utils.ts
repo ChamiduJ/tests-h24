@@ -2,7 +2,7 @@ import { httpRequest } from './common.utils'
 import { IProductsResponse } from '../types/products.types'
 
 export const loadProducts = (): Promise<IProductsResponse> => httpRequest('POST', '/graphql', `{
-  categories: productLists(ids: "156127", locale: de_DE) {
+  categories: productLists(ids: "156126", locale: de_DE) {
     name
     articleCount
     childrenCategories: childrenProductLists {

@@ -35,12 +35,17 @@ export type CategoryArticle = {
 }
 
 export interface IProductsContext {
-  categories: Category[]
-  setCategories: React.Dispatch<React.SetStateAction<Category[]>>
+  categoriesData: ICategoriesData
+  setCategoriesData: React.Dispatch<React.SetStateAction<ICategoriesData>>
 }
 
 export interface IProductsResponse {
   data: {
     categories: Category[]
   }
+}
+
+export interface ICategoriesData {
+  original: Category[]
+  filtered: Category[]
 }
