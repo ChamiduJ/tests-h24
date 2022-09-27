@@ -1,7 +1,7 @@
 import React from 'react'
 import Styled from 'styled-components'
 
-import { Category } from '../../../types/products.types';
+import { Category } from '../../../types/products.types'
 
 interface IProps {
   categories: Category[]

@@ -1,8 +1,8 @@
 import React from 'react'
 import Styled from 'styled-components'
 
-import { Article } from '../../../types/products.types';
-import { formatter } from '../../../utils/common.utils';
+import { Article } from '../../../types/products.types'
+import { formatter } from '../../../utils/common.utils'
 
 interface IProps {
   article: Article
@@ -29,7 +29,7 @@ export default function ArticleCard({ article }: IProps) {
   return (
     <Wrapper>
       <img alt={article.name} src={article.images[0].path} />
-      <div>{article.name}</div>
+      <h4>{article.name}</h4>
       <div>{formatter.format(article.prices.regular.value / 100)}</div>
       <AddToCart>Add to cart</AddToCart>
     </Wrapper>

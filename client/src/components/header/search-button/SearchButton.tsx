@@ -17,7 +17,8 @@ z-index: 1;
 `
 
 const SearchIcon = Styled.img.attrs(() => ({
-  src: `${process.env.PUBLIC_URL}/icons/magnifier.svg`
+  src: `${process.env.PUBLIC_URL}/icons/magnifier.svg`,
+  alt: 'search icon'
 }))`
   max-height: 100%;
   max-width: 100%;

@@ -39,7 +39,7 @@ export default function ProductsCategories({ categories }: IProps) {
               <Item key={name}>
                 <a href={`/products/${urlPath}`}>{name}</a>
               </Item>
-            );
+            )
           })}
         </List>
       ) : (

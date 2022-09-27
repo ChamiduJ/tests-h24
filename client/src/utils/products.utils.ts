@@ -1,4 +1,4 @@
-import { httpRequest } from "./common.utils"
+import { httpRequest } from './common.utils'
 import { IProductsResponse } from '../types/products.types'
 
 export const loadProducts = (): Promise<IProductsResponse> => httpRequest('POST', '/graphql', `{

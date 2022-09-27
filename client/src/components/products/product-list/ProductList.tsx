@@ -2,7 +2,7 @@ import React from 'react'
 import Styled from 'styled-components'
 
 import ArticleCard from '../article-card/ArticleCard'
-import { Category } from '../../../types/products.types';
+import { Category } from '../../../types/products.types'
 
 interface IProps {
   categories: Category[]

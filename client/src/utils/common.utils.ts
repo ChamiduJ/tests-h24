@@ -15,7 +15,7 @@ export const httpRequest = (method: 'POST' | 'GET' = 'GET', path: string, query:
     xhr.setRequestHeader('Content-Type', 'application/json')
     xhr.send(JSON.stringify({ query }))
   } else {
-    xhr.send();
+    xhr.send()
   }
 
   xhr.onload = () => {
@@ -26,7 +26,7 @@ export const httpRequest = (method: 'POST' | 'GET' = 'GET', path: string, query:
       reject({
         statusText: xhr.statusText,
         response: xhr.response
-      });
+      })
     }
   }
 })

@@ -24,7 +24,7 @@ export default function Products() {
   const { categories, setCategories } = useContext<IProductsContext>(ProductsContext)
 
   useEffect(() => {
-    loadProducts().then((response) => setCategories(() => response.data.categories))
+    loadProducts().then((response) => setCategories(() => (response.data.categories[0] ? response.data.categories : [])))
   }, [setCategories])
 
   return (
