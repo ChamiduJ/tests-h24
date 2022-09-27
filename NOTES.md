@@ -10,3 +10,8 @@ Add linter
 Add dark mode
 Add unit testing
 Add front end search functionality
+Improved the UI
+
+
+Did not introduce Redux and used the context API, but can implement using redux too.
+
