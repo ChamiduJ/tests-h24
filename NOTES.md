@@ -7,3 +7,4 @@ Add theme using styled
 Add global styles using styled
 Restructure components
 Add linter
+Add dark mode

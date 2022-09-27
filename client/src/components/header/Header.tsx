@@ -1,5 +1,6 @@
 import React from 'react'
 import Styled from 'styled-components'
+import DarkModeSwitch from './dark-mode-switch/DarkModeSwitch'
 
 import Logo from './logo/Logo'
 import SearchBox from './search-box/SearchBox'
@@ -16,6 +17,7 @@ export default function Header() {
   return (
     <StyledHeader>
       <Logo />
+      <DarkModeSwitch />
       <SearchBox />
     </StyledHeader>
   )
