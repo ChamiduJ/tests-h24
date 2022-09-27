@@ -30,9 +30,9 @@ export default function SearchBox() {
 
   useDebouncedEffect(
     () => {
-      setCategoriesData({
-        original: categoriesData.original,
-        filtered: categoriesData.original.map((category) => ({
+      setCategoriesData(({ original }) => ({
+        original: original,
+        filtered: original.map((category) => ({
           ...category,
           categoryArticles: {
             articles: category.categoryArticles.articles.filter(
@@ -40,7 +40,7 @@ export default function SearchBox() {
             )
           }
         }))
-      })
+      }))
     },
     300,
     [searchText]
