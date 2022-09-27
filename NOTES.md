@@ -8,3 +8,4 @@ Add global styles using styled
 Restructure components
 Add linter
 Add dark mode
+Add unit testing
