@@ -22,7 +22,7 @@ padding: 0 10px;
 
 export default function SearchBox() {
   const [searchText, setSearchText] = useState<string>('')
-  const { categoriesData, setCategoriesData } = useContext<IProductsContext>(ProductsContext)
+  const { setCategoriesData } = useContext<IProductsContext>(ProductsContext)
 
   const filterProducts = (event: ChangeEvent<HTMLInputElement>) => {
     setSearchText(event.target.value)
